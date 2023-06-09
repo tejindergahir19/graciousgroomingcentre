@@ -1,0 +1,12 @@
+#fileloader{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 99999999;
+    position: fixed;
+    top:0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
