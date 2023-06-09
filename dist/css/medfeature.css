@@ -1,0 +1,38 @@
+.medfeaturecards .medfeature{
+    margin:0;
+    padding:0;
+}
+
+.medfeaturecards .medfeature{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.medfeaturecards .medfeature img{
+    width:100%;
+    opacity: 0.8;
+}
+
+.medfeaturecards .medfeature .comm{
+    display: flex;
+    align-items: center;
+}
+
+.medfeaturecards .medfeature .comm p{
+    text-align: justify;
+}
+
+@media only screen and (max-width: 1190px) {
+    .medfeaturecards .medfeature{
+        grid-template-columns: 1fr 2fr;
+    }
+  }
+
+  @media only screen and (max-width: 918px) {
+    .medfeaturecards .medfeature{
+        grid-template-columns: 1fr;
+    }
+  }
+

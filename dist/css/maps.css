@@ -1,0 +1,52 @@
+.minifeaturecards #map {
+    width: 100%;
+    margin:30px 0;
+}
+
+.minifeaturecards #map iframe{
+    width:100%;
+    height: 40vh;
+}
+
+.minifeaturecards  #map .contactdetails{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(328px,1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+    margin:30px 0;
+}
+
+.minifeaturecards  #map .contactdetails>div{
+    border:1px solid rgb(228, 226, 226);
+    padding:20px;
+    border-radius: 5px;
+    width:100%;
+}
+
+.minifeaturecards  #map .contactdetails>div>a{
+    text-decoration: none;
+    color:black;
+}
+.minifeaturecards  #map .contactdetails>div:hover{
+    background: rgba( 128, 0, 128, 0.9 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.5 );
+    backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur( 20px );
+    border: 2px solid rgba( 128, 0, 128, 0.9 );;
+color:white;
+cursor: pointer;
+}
+
+.minifeaturecards  #map .contactdetails>div h4{
+    color:var(--maintheme);
+    font-weight: 900;
+}
+
+.minifeaturecards  #map .contactdetails>div:hover h4{
+    color:var(--mainthemeinvert);
+}
+
+.minifeaturecards  #map .contactdetails>div:hover a{
+    color:white;
+}

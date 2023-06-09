@@ -1,0 +1,248 @@
+:root {
+  --maintheme: #800080;
+}
+
+#root {
+  margin: 160px 0;
+}
+
+.homebanner {
+  width: 100%;
+}
+
+.homebanner img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.homebanner .centered {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: 1s ease-out 0s 1 slidedown;
+}
+
+.homebanner .centered p {
+  text-align: center;
+}
+
+.homebanner .centered p:nth-child(1) {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--maintheme);
+  transition: font-size 1s;
+}
+
+.homebanner .centered p:nth-child(1):hover {
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.homebanner .centered p:nth-child(2) {
+  font-size: 38px;
+  font-weight: 900;
+  color: black;
+}
+
+@keyframes slidedown {
+  0% {
+    top: 28%;
+    opacity: 0;
+  }
+  100% {
+    top: 36%;
+    opacity: 1;
+  }
+}
+
+/* For Making Our Centered Text responsive */
+
+@media only screen and (max-width: 1370px) {
+  .homebanner .centered p:nth-child(1) {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--maintheme);
+    transition: font-size 1s;
+  }
+
+  .homebanner .centered p:nth-child(1):hover {
+    cursor: pointer;
+    font-size: 22px;
+  }
+
+  .homebanner .centered p:nth-child(2) {
+    font-size: 32px;
+    font-weight: 900;
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  #root {
+    margin: 260px 0;
+  }
+
+  .homebanner img {
+    width: 100%;
+    height: 38vh;
+    opacity: 0.6;
+  }
+
+  .homebanner .centered {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 1s ease-out 0s 1 slidedown;
+  }
+
+  @keyframes slidedown {
+    0% {
+      top: 42%;
+      opacity: 0;
+    }
+    100% {
+      top: 48%;
+      opacity: 1;
+    }
+  }
+
+  .homebanner .centered p:nth-child(1) {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--maintheme);
+    transition: font-size 1s;
+  }
+
+  .homebanner .centered p:nth-child(1):hover {
+    cursor: pointer;
+    font-size: 22px;
+  }
+
+  .homebanner .centered p:nth-child(2) {
+    font-size: 28px;
+    font-weight: 900;
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .homebanner .centered p:nth-child(1) {
+    font-size: 16px;
+  }
+
+  .homebanner .centered p:nth-child(1):hover {
+    font-size: 20px;
+  }
+
+  .homebanner .centered p:nth-child(2) {
+    font-size: 24px;
+  }
+
+  .homebanner img {
+    height: 32vh;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #root {
+    margin: 180px 0;
+  }
+
+  .homebanner img {
+    width: 100%;
+    height: 24vh;
+    opacity: 0.35;
+  }
+
+  .homebanner .centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 1s ease-out 0s 1 slidedown;
+  }
+
+  @keyframes slidedown {
+    0% {
+      top:26%;
+      opacity: 0;
+    }
+    100% {
+      top: 30%;
+      opacity: 1;
+    }
+  }
+
+  .homebanner .centered p:nth-child(1) {
+    font-size: 16px;
+    transition: font-size 1s;
+  }
+
+  .homebanner .centered p:nth-child(1):hover {
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .homebanner .centered p:nth-child(2) b{
+    display: block;
+    width:460px;
+  }
+
+  .homebanner .centered p:nth-child(2) {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #root {
+    margin: 160px 0;
+  }
+
+  .homebanner img {
+    width: 100%;
+    height: 25vh;
+    opacity: 0.15;
+  }
+
+  .homebanner .centered {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 1s ease-out 0s 1 slidedown;
+    width:90%;
+  }
+
+  @keyframes slidedown {
+    0% {
+      top:32%;
+      opacity: 0;
+    }
+    100% {
+      top: 36%;
+      opacity: 1;
+    }
+  }
+
+  .homebanner .centered p:nth-child(1) {
+    font-size: 17px;
+    transition: font-size 1s;
+  }
+
+  .homebanner .centered p:nth-child(1):hover {
+    cursor: pointer;
+    font-size: 19px;
+  }
+
+  .homebanner .centered p:nth-child(2) b{
+    display: block;
+    width:100%;
+  }
+
+  .homebanner .centered p:nth-child(2) {
+    font-size: 22px;
+  }
+}

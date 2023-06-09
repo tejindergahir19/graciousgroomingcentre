@@ -1,0 +1,63 @@
+footer section{
+    background-color: var(--maintheme);
+    padding:10px;
+    color:white;
+}
+
+footer section h5{
+    color:var(--mainthemeinvert);
+    text-align: left;
+}
+
+footer section p{
+    text-align:justify;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+
+footer .tjprofile{
+    background-color: black;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 20px;
+}
+
+@media only screen and (max-width:590px) {
+    footer .tjprofile{
+        justify-content: center;
+        align-items: center;
+        padding:10px;
+    }
+
+    footer .tjprofile span:nth-child(1){
+        display:none;
+    }  
+}
+
+
+
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

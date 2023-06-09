@@ -1,0 +1,110 @@
+:root {
+    --maintheme: #800080;
+  }
+
+.featurecards{
+    margin:30px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    column-gap: 30px;
+    row-gap: 30px;
+    animation: 3s ease-out 0s 1 opacity;
+}
+
+  @keyframes opacity{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.featurecards .card{
+    padding:20px 15px;
+    transition: background 0.1s ease-in,color 0.1s;
+    
+}
+
+.featurecards .card:hover{
+    background: rgba( 128, 0, 128, 0.9 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.5 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+color:white;
+cursor: pointer;
+}
+
+.featurecards .card:hover #featurecard4img{
+    filter: invert(100%);
+}
+
+.featurecards .card .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featurecards .card .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 5px 0;
+}
+
+.featurecards .card .title h3{
+    font-weight: 900;
+}
+
+.featurecards .card .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+
+.featurecards .card .time p{
+    font-weight: 600;
+}
+
+#featurecard4time{
+    color:#800080;
+}
+
+.featurecards .card:hover #featurecard4time{
+    color:#6DD870;
+}
+
+.featurecards .card .content p,
+.featurecards .card .content p ul li{
+    text-align: justify;
+}
+
+
+
+
+/* resposive */
+  @media only screen and (max-width: 1370px) {
+    .featurecards{
+        grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    }
+  }
+  
+  @media only screen and (max-width: 912px) {
+    .featurecards{
+        grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
+    .featurecards{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        margin:30px 20px;
+    }
+  }
+
+
+ 
+

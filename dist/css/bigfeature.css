@@ -1,0 +1,181 @@
+:root {
+    --maintheme: #800080;
+  }
+
+
+  .bigfeature{
+    margin:50px;
+    padding:50px 80px;
+    display:flex;
+    justify-content: start;
+    flex-basis: 500px;
+  }
+
+  .bigfeature .img img{
+    display: inline;
+    height:464px;
+    opacity: 0.6;
+  }
+
+
+  .bigfeature .content{
+    width:100%;
+    margin:0 80px;
+  }
+
+  .bigfeature .content .about h4{
+    color:var(--maintheme);
+    font-weight: 900;
+  }
+
+  .bigfeature .content .title h2{
+    margin:15px 0;
+    font-weight: 900;
+  }
+
+  .bigfeature .content .alttext p{
+    text-align: justify;
+    font-weight: 700;
+    margin:5px 0 ;
+  }
+
+  
+
+  .bigfeature .content .collapsecontents{
+    margin:25px 5px;
+  }
+
+  /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-weight: 900;
+    margin:5px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #eee;
+  }
+  
+  .collapsecontent {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+  }
+
+  .collapsecontent p{
+    /* font-weight: 600; */
+    text-align: justify;
+    /* color:gray */
+  }
+
+
+  /* resposive */
+@media only screen and (max-width: 1600px) {
+  .bigfeature{
+    margin:50px 20px;
+    padding:50px 20px;
+  }
+
+  .bigfeature .img img{
+    width:460px;
+    height:420px;
+  }
+}
+
+@media only screen and (max-width: 1370px) {
+  .bigfeature{
+    margin:50px 10px 25px 10px ;
+    padding:50px 10px 25px 10px;
+  }
+
+  .bigfeature .img img{
+    width:400px;
+    height:360px;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  .bigfeature .content .about h4{
+    font-size:21px;
+  }
+
+  .bigfeature .content .title h2{
+    font-size:27px;
+  }
+
+  .bigfeature .content{
+    width:100%;
+    margin:0 25px;
+  }
+
+  .bigfeature .content .collapsecontents{
+    margin:25px 0px;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .bigfeature{
+    display:flex;
+    justify-content: center;
+    flex-basis: 500px;
+    flex-wrap: wrap;
+  }
+
+  .bigfeature .img img{
+    display: inline;
+    height:360px;
+    opacity: 0.65;
+    margin:0 0 50px 0;
+  }
+}
+
+
+@media only screen and (max-width: 460px) {
+  .bigfeature .content .about h4{
+    font-size:16px;
+  }
+
+  .bigfeature .content .title h2{
+    font-size:22px;
+  }
+
+  .bigfeature .content{
+    width:100%;
+    margin:0 2px;
+  }
+
+  .bigfeature .content .collapsecontents{
+    margin:20px 0px;
+  }
+
+  .bigfeature .img img{
+    display: inline;
+    width:340px;
+    height:280px;
+    opacity: 0.65;
+    margin:0 0 50px 0;
+  }
+}
+
+@media only screen and (max-width: 362px) {
+  .bigfeature .content .about h4{
+    font-size:14px;
+  }
+
+  .bigfeature .content .title h2{
+    font-size:20px;
+  }
+}
+
+
+
