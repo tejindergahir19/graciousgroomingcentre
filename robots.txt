@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:  /404.html
 Disallow: /comingsoon.html
-Sitemap: http://graciousgroomingcentre.in/sitemap.xml
+Sitemap: https://tejindergahir19.github.io/graciousgroomingcentre/sitemap.xml
